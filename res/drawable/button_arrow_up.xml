@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_enabled="true">
+		<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+			<item>
+				<bitmap android:src="@drawable/dark_button_background"
+					android:gravity="center" />
+			</item>
+			<item>
+				<bitmap android:src="@drawable/arrow_up_active"
+					android:gravity="center" />
+			</item>
+		</layer-list>
+	</item>
+
+	<item android:state_enabled="false">
+		<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <bitmap android:src="@drawable/dark_button_background"
+                    android:gravity="center" />
+            </item>
+            <item>
+                <bitmap android:src="@drawable/arrow_up"
+                    android:gravity="center" />
+            </item>
+		</layer-list>
+	</item>
+</selector>

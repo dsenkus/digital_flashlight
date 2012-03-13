@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_checked="true" android:state_pressed="false">
+		<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+			<item>
+				<bitmap android:src="@drawable/output_both_active"
+					android:gravity="center" />
+			</item>
+		</layer-list>
+	</item>
+	
+	<item android:state_checked="false" android:state_pressed="false">
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <bitmap android:src="@drawable/output_both"
+                    android:gravity="center" />
+            </item>
+        </layer-list>	
+	</item>
+	
+	<item android:state_checked="true" android:state_pressed="true">
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <bitmap android:src="@drawable/output_both_active"
+                    android:gravity="center" />
+            </item>
+        </layer-list>	
+	</item>
+	
+	<item android:state_checked="false" android:state_pressed="true">
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <bitmap android:src="@drawable/output_both"
+                    android:gravity="center" />
+            </item>
+        </layer-list>	
+	</item>
+</selector>
+

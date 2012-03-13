@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dsenkus="http://schemas.android.com/apk/res/com.dsenkus.digitalflashlight"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:padding="5dp" >
+
+    <com.dsenkus.digitalflashlight.widgets.LcdDisplay
+        android:id="@+id/lcd_display"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"/>
+
+    <include layout="@layout/partial_setup_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" />
+
+    <include layout="@layout/partial_main_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

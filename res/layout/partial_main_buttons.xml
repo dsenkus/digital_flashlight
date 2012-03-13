@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dsenkus="http://schemas.android.com/apk/res/com.dsenkus.digitalflashlight"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RadioGroup
+        android:id="@+id/modeButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <com.dsenkus.digitalflashlight.widgets.RadioButtonCenter
+            android:id="@+id/modeTorch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dark_button_background"
+            android:button="@drawable/button_mode_torch" />
+
+        <com.dsenkus.digitalflashlight.widgets.RadioButtonCenter
+            android:id="@+id/modeSos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dark_button_background"
+            android:button="@drawable/button_mode_sos" />
+
+        <com.dsenkus.digitalflashlight.widgets.RadioButtonCenter
+            android:id="@+id/modeStrobe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dark_button_background"
+            android:button="@drawable/button_mode_strobe" />
+    </RadioGroup>
+
+    <com.dsenkus.digitalflashlight.widgets.DrawInstruction
+        android:id="@+id/setupButtonsInstructionMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/modeButtons"
+        dsenkus:height="15"
+        dsenkus:obj1="@id/modeTorch"
+        dsenkus:obj2="@id/modeStrobe"
+        dsenkus:orientation="verticalLeft"
+        dsenkus:text="MODE" />
+
+    <ToggleButton
+        android:id="@+id/powerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_power"
+        android:onClick="flashlightButtonListener"
+        android:textOff=""
+        android:textOn="" />
+
+    <RadioGroup
+        android:id="@+id/outputButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" >
+
+        <com.dsenkus.digitalflashlight.widgets.RadioButtonCenter
+            android:id="@+id/outputLed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dark_button_background"
+            android:button="@drawable/button_output_led" />
+
+        <com.dsenkus.digitalflashlight.widgets.RadioButtonCenter
+            android:id="@+id/outputBoth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dark_button_background"
+            android:button="@drawable/button_output_both" />
+
+        <com.dsenkus.digitalflashlight.widgets.RadioButtonCenter
+            android:id="@+id/outputScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dark_button_background"
+            android:button="@drawable/button_output_screen" />
+    </RadioGroup>
+
+    <com.dsenkus.digitalflashlight.widgets.DrawInstruction
+        android:id="@+id/setupButtonsInstructionOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/outputButtons"
+        dsenkus:height="15"
+        dsenkus:obj1="@id/outputLed"
+        dsenkus:obj2="@id/outputScreen"
+        dsenkus:orientation="verticalRight"
+        dsenkus:text="OUTPUT" />
+
+</RelativeLayout>

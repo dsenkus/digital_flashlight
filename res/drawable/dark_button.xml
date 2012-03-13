@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nine-patch xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/dark_button_background" android:dither="true" />

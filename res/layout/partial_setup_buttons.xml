@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dsenkus="http://schemas.android.com/apk/res/com.dsenkus.digitalflashlight"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/setupButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.dsenkus.digitalflashlight.widgets.AutoRepeatButton
+            android:id="@+id/setupButtonA1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_arrow_up"
+            android:enabled="false"
+            android:onClick="setupButtonListener" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <com.dsenkus.digitalflashlight.widgets.AutoRepeatButton
+            android:id="@+id/setupButtonA2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_arrow_down"
+            android:enabled="false"
+            android:onClick="setupButtonListener" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <com.dsenkus.digitalflashlight.widgets.AutoRepeatButton
+            android:id="@+id/setupButtonB1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_arrow_up"
+            android:enabled="false"
+            android:onClick="setupButtonListener" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <com.dsenkus.digitalflashlight.widgets.AutoRepeatButton
+            android:id="@+id/setupButtonB2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_arrow_down"
+            android:enabled="false"
+            android:onClick="setupButtonListener" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.dsenkus.digitalflashlight.widgets.DrawInstruction
+            android:id="@+id/setupButtonsInstructionA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setupButtonA1"
+            dsenkus:height="15"
+            dsenkus:obj1="@id/setupButtonA1"
+            dsenkus:obj2="@id/setupButtonA2"
+            dsenkus:orientation="horizontal"
+            dsenkus:text="A" />
+
+        <com.dsenkus.digitalflashlight.widgets.DrawInstruction
+            android:id="@+id/setupButtonsInstructionB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/setupButtonB1"
+            android:layout_below="@id/setupButtonB1"
+            dsenkus:height="15"
+            dsenkus:obj1="@id/setupButtonB1"
+            dsenkus:obj2="@id/setupButtonB2"
+            dsenkus:orientation="horizontal"
+            dsenkus:text="B" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CompoundButton">
+        <attr name="android:button" />
+    </declare-styleable>
+    <declare-styleable name="DrawInstruction">
+        <attr name="obj1" format="reference" />
+        <attr name="obj2" format="reference" />
+        <attr name="text" format="string" />
+        <attr name="height" format="integer"/>
+        <attr name="textSize" format="integer"/>
+        <attr name="orientation">
+            <enum name="horizontal" value="0" />
+            <enum name="verticalLeft" value="1" />
+            <enum name="verticalRight" value="2" />
+        </attr>
+    </declare-styleable>
+
+</resources>

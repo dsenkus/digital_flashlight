@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <style name="CodeFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textColor">#F9FFFF</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">4.0</item>
+        <item name="android:shadowColor">#8B59DA</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textSize">120sp</item>
+        <item name="android:text">STROBE MODE\nFLASH 25 MS\nDELAY 50MS</item>
+    </style>
+
+    <style name="DarkButtonText">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    
+    <style name="DarkButtonTextChecked">
+        <item name="android:textColor">#00FFFF</item>
+    </style>
+
+</resources>
